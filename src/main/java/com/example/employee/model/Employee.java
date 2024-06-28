@@ -8,7 +8,7 @@
 // Write your code here
 package com.example.employee.model;
 
-import javax.persistance.*;
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
@@ -17,7 +17,7 @@ import java.util.List;
 public class Employee {
     @Id
     @Column(name = "employeeid")
-    @GeneratedValue(Strategy = GenerationType.IDENTITY)
+ @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int  employeeId;
     @Column(name = "employeename")
     private String employeeName;
