@@ -47,4 +47,8 @@ public Employee updateEmployee(@PathVariable("employeeId") int employeeId, @Requ
 
 return employeeService.updateEmployee(employeeId, employee);
 }
+     @DeleteMapping("/employees/{employeeId}")
+    public void deleteEmployee(@PathVariable int employeeId) {
+        employeeService.deleteEmployee(employeeId);
+    }
 }
